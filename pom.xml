@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <name>JAI imageio</name>
+  <groupId>net.disy.jai</groupId>
+  <artifactId>jai-imageio</artifactId>
+  <version>1.0.0</version>
+  <packaging>jar</packaging>
+
+
+  <dependencies>
+    <dependency>
+      <groupId>clibwrapper_jiio</groupId>
+      <artifactId>clibwrapper_jiio</artifactId>
+      <scope>system</scope>
+      <version>1.0</version>
+      <systemPath>${basedir}/jclib4jai/clibwrapper_jiio.jar</systemPath>
+    </dependency>
+
+    <dependency>
+      <groupId>net.disy.jai</groupId>
+      <artifactId>jai-core</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+  </dependencies>
+
+
+  <profiles>
+    <profile>
+      <id>java9</id>
+      <!-- automatically activate the profile if running on Java 9 -->
+      <activation>
+        <jdk>9</jdk>
+      </activation>
+      <build>
+        <pluginManagement>
+          <plugins>
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-compiler-plugin</artifactId>
+              <version>3.6.1</version>
+              <configuration>
+                <compilerId>javac</compilerId>
+                <fork>true</fork>
+                <!-- do not use "release" because it does not work with add-exports -->
+                <source>9</source>
+                <target>9</target>
+                <maxmem>512</maxmem>
+                <meminitial>64</meminitial>
+                <encoding>UTF-8</encoding>
+                <compilerArgs>
+                  <arg>--add-modules</arg><arg>java.xml.bind</arg>
+                  <arg>--add-exports</arg><arg>java.base/sun.security.action=ALL-UNNAMED</arg>
+                </compilerArgs>
+              </configuration>
+            </plugin>
+          </plugins>
+        </pluginManagement>
+      </build>
+    </profile>
+  </profiles>
+
+
+</project>
