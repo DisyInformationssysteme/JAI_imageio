@@ -6,6 +6,11 @@
   <artifactId>jai-imageio</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
+  <parent>
+    <groupId>net.disy</groupId>
+    <artifactId>disy-parent</artifactId>
+    <version>10.0.0</version>
+  </parent>
 
 
   <dependencies>
@@ -49,8 +54,10 @@
                 <meminitial>64</meminitial>
                 <encoding>UTF-8</encoding>
                 <compilerArgs>
-                  <arg>--add-modules</arg><arg>java.xml.bind</arg>
-                  <arg>--add-exports</arg><arg>java.base/sun.security.action=ALL-UNNAMED</arg>
+                  <arg>--add-modules</arg>
+                  <arg>java.xml.bind</arg>
+                  <arg>--add-exports</arg>
+                  <arg>java.base/sun.security.action=ALL-UNNAMED</arg>
                 </compilerArgs>
               </configuration>
             </plugin>
