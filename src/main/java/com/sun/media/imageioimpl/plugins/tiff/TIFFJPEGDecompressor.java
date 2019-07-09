@@ -45,14 +45,16 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import java.io.IOException;
 import java.io.ByteArrayInputStream;
+import java.io.IOException;
 import java.util.Iterator;
+
 import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
 import javax.imageio.ImageReadParam;
-import javax.imageio.stream.MemoryCacheImageInputStream;
+import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
+import javax.imageio.stream.MemoryCacheImageInputStream;
+
 import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 import com.sun.media.imageio.plugins.tiff.TIFFDecompressor;
 import com.sun.media.imageio.plugins.tiff.TIFFField;

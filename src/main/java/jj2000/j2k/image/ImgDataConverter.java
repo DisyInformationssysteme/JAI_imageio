@@ -44,9 +44,6 @@
  * */
 package jj2000.j2k.image;
 
-import jj2000.j2k.image.*;
-import jj2000.j2k.*;
-
 /**
  * This class is responsible of all data type conversions. It should be used,
  * at encoder side, between Tiler and ForwardWT modules and, at decoder side,

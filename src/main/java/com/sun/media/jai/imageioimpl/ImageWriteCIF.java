@@ -51,6 +51,7 @@ import java.awt.image.renderable.ParameterBlock;
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Iterator;
+
 import javax.imageio.ImageIO;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
@@ -60,6 +61,7 @@ import javax.media.jai.CollectionImage;
 import javax.media.jai.CollectionImageFactory;
 import javax.media.jai.CollectionOp;
 import javax.media.jai.PropertySource;
+
 import com.sun.media.jai.operator.ImageWriteDescriptor;
 
 public final class ImageWriteCIF implements CollectionImageFactory {

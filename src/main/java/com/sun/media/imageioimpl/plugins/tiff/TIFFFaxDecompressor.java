@@ -44,16 +44,13 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.BufferedImage;
-import java.awt.image.WritableRaster;
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.EOFException;
+import java.io.IOException;
 import java.io.PrintStream;
+
 import javax.imageio.IIOException;
-import javax.imageio.ImageTypeSpecifier;
+
 import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 import com.sun.media.imageio.plugins.tiff.TIFFDecompressor;
 import com.sun.media.imageio.plugins.tiff.TIFFField;

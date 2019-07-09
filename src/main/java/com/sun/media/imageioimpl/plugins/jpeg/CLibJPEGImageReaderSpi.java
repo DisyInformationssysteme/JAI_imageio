@@ -44,18 +44,18 @@
  */
 package com.sun.media.imageioimpl.plugins.jpeg;
 
-import java.util.Arrays;
-import java.util.Iterator;
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
+
+import javax.imageio.IIOException;
+import javax.imageio.ImageReader;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.spi.ServiceRegistry;
 import javax.imageio.stream.ImageInputStream;
-import java.io.IOException;
-import javax.imageio.ImageReader;
-import javax.imageio.IIOException;
-import com.sun.media.imageioimpl.common.PackageUtil;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
+import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class CLibJPEGImageReaderSpi extends ImageReaderSpi {
 

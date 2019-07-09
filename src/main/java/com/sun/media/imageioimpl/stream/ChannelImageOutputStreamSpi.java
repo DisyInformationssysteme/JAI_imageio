@@ -45,17 +45,19 @@
 package com.sun.media.imageioimpl.stream;
 
 import java.io.File;
-import java.io.OutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.nio.channels.Channels;
 import java.nio.channels.FileChannel;
 import java.nio.channels.NonReadableChannelException;
 import java.nio.channels.WritableByteChannel;
 import java.util.Locale;
+
 import javax.imageio.spi.ImageOutputStreamSpi;
 import javax.imageio.stream.FileCacheImageOutputStream;
 import javax.imageio.stream.ImageOutputStream;
 import javax.imageio.stream.MemoryCacheImageOutputStream;
+
 import com.sun.media.imageio.stream.FileChannelImageOutputStream;
 import com.sun.media.imageioimpl.common.PackageUtil;
 

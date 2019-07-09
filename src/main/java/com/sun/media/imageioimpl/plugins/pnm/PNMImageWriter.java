@@ -44,7 +44,6 @@
  */
 package com.sun.media.imageioimpl.plugins.pnm;
 
-import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.color.ColorSpace;
 import java.awt.image.ColorModel;
@@ -56,26 +55,19 @@ import java.awt.image.MultiPixelPackedSampleModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
-import java.awt.image.WritableRaster;
-
 import java.io.IOException;
-
+import java.security.PrivilegedAction;
 import java.util.Iterator;
 
-import javax.imageio.IIOImage;
 import javax.imageio.IIOException;
+import javax.imageio.IIOImage;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
 import javax.imageio.metadata.IIOInvalidTreeException;
+import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
-
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import com.sun.media.imageio.plugins.pnm.PNMImageWriteParam;
 import com.sun.media.imageioimpl.common.ImageUtil;
@@ -109,7 +101,7 @@ public class PNMImageWriter extends ImageWriter {
     static {
         if (lineSeparator == null) {
             String ls = (String)java.security.AccessController.doPrivileged(
-               new sun.security.action.GetPropertyAction("line.separator"));
+            		(PrivilegedAction<String>) () -> System.getProperty("line.separator"));
             lineSeparator = ls.getBytes();
         }
     }

@@ -44,7 +44,6 @@
  */
 package com.sun.media.imageioimpl.plugins.bmp;
 
-import java.io.UnsupportedEncodingException;
 import java.awt.image.ColorModel;
 import java.awt.image.DirectColorModel;
 import java.awt.image.IndexColorModel;
@@ -54,15 +53,15 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.StringTokenizer;
-import javax.imageio.ImageTypeSpecifier;
+
 import javax.imageio.ImageWriteParam;
 import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormat;
 import javax.imageio.metadata.IIOMetadataFormatImpl;
+import javax.imageio.metadata.IIOMetadataNode;
+
 import org.w3c.dom.Node;
-import com.sun.media.imageio.plugins.bmp.BMPImageWriteParam;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
 
 public class BMPMetadata extends IIOMetadata

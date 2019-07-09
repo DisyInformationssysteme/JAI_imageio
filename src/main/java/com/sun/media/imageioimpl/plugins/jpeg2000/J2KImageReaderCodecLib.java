@@ -44,35 +44,27 @@
  */
 package com.sun.media.imageioimpl.plugins.jpeg2000;
 
-import com.sun.media.imageio.plugins.jpeg2000.J2KImageReadParam;
-
 import java.awt.Point;
+import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Iterator;
 
-import javax.imageio.IIOException;
-import javax.imageio.ImageReader;
 import javax.imageio.ImageReadParam;
+import javax.imageio.ImageReader;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.stream.ImageInputStream;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import javax.imageio.metadata.IIOMetadata;
-import java.awt.image.BufferedImage;
-
+import com.sun.media.imageio.plugins.jpeg2000.J2KImageReadParam;
 import com.sun.media.imageioimpl.common.SimpleRenderedImage;
-
-import com.sun.medialib.codec.jp2k.Decoder;
-import com.sun.medialib.codec.jp2k.Size;
-import com.sun.medialib.codec.jiio.*;
 
 public class J2KImageReaderCodecLib extends ImageReader {
     /** Wrapper for the protected method <code>processImageUpdate</code>

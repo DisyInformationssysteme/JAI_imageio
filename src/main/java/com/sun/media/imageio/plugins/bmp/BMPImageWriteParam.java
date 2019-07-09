@@ -45,6 +45,7 @@
 package com.sun.media.imageio.plugins.bmp;
 
 import java.util.Locale;
+
 import javax.imageio.ImageWriteParam;
 
 import com.sun.media.imageioimpl.plugins.bmp.BMPConstants;

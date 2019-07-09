@@ -48,7 +48,9 @@ package com.sun.media.imageioimpl.plugins.tiff;
 import java.io.IOException;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
+
 import javax.imageio.IIOException;
+
 import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 import com.sun.media.imageio.plugins.tiff.TIFFDecompressor;
 

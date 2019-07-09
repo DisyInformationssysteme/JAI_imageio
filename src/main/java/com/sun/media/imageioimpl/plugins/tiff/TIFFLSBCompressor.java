@@ -44,9 +44,10 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
+import java.io.IOException;
+
 import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 import com.sun.media.imageio.plugins.tiff.TIFFCompressor;
-import java.io.IOException;
 
 /**
  * Uncompressed data with LSB-to-MSB fill order.

@@ -47,6 +47,7 @@ package com.sun.media.imageioimpl.common;
 
 import java.io.IOException;
 import java.io.PrintStream;
+
 import javax.imageio.stream.ImageOutputStream;
 
 /**

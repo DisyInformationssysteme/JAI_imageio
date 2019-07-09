@@ -42,22 +42,19 @@
 package jj2000.j2k.fileformat.reader;
 
 import java.awt.Transparency;
-import java.awt.color.ICC_Profile;
 import java.awt.color.ColorSpace;
 import java.awt.color.ICC_ColorSpace;
+import java.awt.color.ICC_Profile;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.IndexColorModel;
+import java.io.EOFException;
+import java.io.IOException;
+import java.util.Vector;
 
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.fileformat.*;
-import jj2000.j2k.io.*;
-
-import java.util.*;
-import java.io.*;
-import com.sun.media.imageioimpl.plugins.jpeg2000.Box;
 import com.sun.media.imageioimpl.plugins.jpeg2000.BitsPerComponentBox;
+import com.sun.media.imageioimpl.plugins.jpeg2000.Box;
 import com.sun.media.imageioimpl.plugins.jpeg2000.ChannelDefinitionBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.ColorSpecificationBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.ComponentMappingBox;
@@ -65,12 +62,16 @@ import com.sun.media.imageioimpl.plugins.jpeg2000.DataEntryURLBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.FileTypeBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.HeaderBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KMetadata;
-import com.sun.media.imageioimpl.plugins.jpeg2000.ResolutionBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.PaletteBox;
+import com.sun.media.imageioimpl.plugins.jpeg2000.ResolutionBox;
+import com.sun.media.imageioimpl.plugins.jpeg2000.SignatureBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.UUIDBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.UUIDListBox;
 import com.sun.media.imageioimpl.plugins.jpeg2000.XMLBox;
-import com.sun.media.imageioimpl.plugins.jpeg2000.SignatureBox;
+
+import jj2000.j2k.codestream.Markers;
+import jj2000.j2k.fileformat.FileFormatBoxes;
+import jj2000.j2k.io.RandomAccessIO;
 
 /**
  * This class reads the file format wrapper that may or may not exist around a

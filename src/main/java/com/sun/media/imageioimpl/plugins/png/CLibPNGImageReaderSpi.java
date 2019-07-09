@@ -44,16 +44,18 @@
  */
 package com.sun.media.imageioimpl.plugins.png;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.spi.ServiceRegistry;
-import java.io.IOException;
-import javax.imageio.ImageReader;
+
 import javax.imageio.IIOException;
-import com.sun.media.imageioimpl.common.PackageUtil;
+import javax.imageio.ImageReader;
+import javax.imageio.spi.ImageReaderSpi;
+import javax.imageio.spi.ServiceRegistry;
+import javax.imageio.stream.ImageInputStream;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
+import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class CLibPNGImageReaderSpi extends ImageReaderSpi {
 

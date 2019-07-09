@@ -43,23 +43,23 @@
  * Copyright (c) 1999/2000 JJ2000 Partners.
  * */
 package jj2000.j2k.roi.encoder;
-import java.awt.Point;
-
-import jj2000.j2k.quantization.quantizer.*;
-import jj2000.j2k.codestream.writer.*;
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.quantization.*;
-import jj2000.j2k.image.input.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.roi.*;
-import jj2000.j2k.*;
-
-import java.util.*;
-import java.io.*;
+import java.io.IOException;
+import java.util.NoSuchElementException;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.ModuleSpec;
+import jj2000.j2k.image.DataBlkInt;
+import jj2000.j2k.image.ImgDataAdapter;
+import jj2000.j2k.image.input.ImgReaderPGM;
+import jj2000.j2k.quantization.quantizer.CBlkQuantDataSrcEnc;
+import jj2000.j2k.quantization.quantizer.Quantizer;
+import jj2000.j2k.roi.MaxShiftSpec;
+import jj2000.j2k.wavelet.Subband;
+import jj2000.j2k.wavelet.analysis.CBlkWTData;
+import jj2000.j2k.wavelet.analysis.SubbandAn;
 /**
  * This class deals with the ROI functionality.
  *

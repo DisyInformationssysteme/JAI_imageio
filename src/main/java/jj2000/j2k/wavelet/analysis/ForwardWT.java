@@ -44,17 +44,14 @@
  *  */
 package jj2000.j2k.wavelet.analysis;
 
-import jj2000.j2k.codestream.writer.*;
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
-import java.io.*;
-import java.util.*;
+import java.io.StreamTokenizer;
+import java.util.StringTokenizer;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.image.BlkImgDataSrc;
+import jj2000.j2k.image.ImgData;
+import jj2000.j2k.image.ImgDataAdapter;
 /**
  * This abstract class represents the forward wavelet transform functional
  * block. The functional block may actually be comprised of several classes

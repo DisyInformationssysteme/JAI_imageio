@@ -44,19 +44,22 @@
  * */
 package jj2000.j2k.entropy.encoder;
 import java.awt.Point;
-
-import jj2000.j2k.codestream.writer.*;
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.entropy.encoder.*;
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.entropy.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-
-import java.util.Vector;
-import java.io.*;
+import java.io.IOException;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.codestream.Markers;
+import jj2000.j2k.codestream.PrecInfo;
+import jj2000.j2k.codestream.ProgressionType;
+import jj2000.j2k.codestream.writer.BitOutputBuffer;
+import jj2000.j2k.codestream.writer.CodestreamWriter;
+import jj2000.j2k.codestream.writer.PktEncoder;
+import jj2000.j2k.entropy.Progression;
+import jj2000.j2k.util.FacilityManager;
+import jj2000.j2k.util.MathUtil;
+import jj2000.j2k.util.MsgLogger;
+import jj2000.j2k.util.ProgressWatch;
+import jj2000.j2k.wavelet.analysis.SubbandAn;
 /**
  * This implements the EBCOT post compression rate allocation algorithm. This
  * algorithm finds the most suitable truncation points for the set of
@@ -219,12 +222,6 @@ public class EBCOTRateAllocator extends PostCompRateAllocator {
 
         // If we do timing create necessary structures
         if (DO_TIMING) {
-            // If we are timing make sure that 'finalize' gets called.
-            System.runFinalizersOnExit(true);
-            // The System.runFinalizersOnExit() method is deprecated in Java
-            // 1.2 since it can cause a deadlock in some cases. However, here
-            // we use it only for profiling purposes and is disabled in
-            // production code.
             initTime = 0L;
             buildTime = 0L;
             writeTime = 0L;

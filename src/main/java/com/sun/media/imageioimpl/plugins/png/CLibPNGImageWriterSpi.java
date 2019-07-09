@@ -49,14 +49,14 @@ import java.awt.image.IndexColorModel;
 import java.awt.image.SampleModel;
 import java.util.List;
 import java.util.Locale;
-import javax.imageio.ImageWriter;
+
 import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
+import javax.imageio.ImageWriter;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.spi.ServiceRegistry;
-import com.sun.media.imageioimpl.common.PackageUtil;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
+import com.sun.media.imageioimpl.common.PackageUtil;
 
 /**
  */

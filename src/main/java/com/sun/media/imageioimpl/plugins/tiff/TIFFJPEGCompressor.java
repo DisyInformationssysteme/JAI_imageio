@@ -45,12 +45,10 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
-import com.sun.media.imageio.plugins.tiff.TIFFField;
-import com.sun.media.imageio.plugins.tiff.TIFFTag;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.util.Iterator;
+
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.metadata.IIOMetadata;
@@ -59,6 +57,10 @@ import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.spi.ServiceRegistry;
 import javax.imageio.stream.MemoryCacheImageInputStream;
 import javax.imageio.stream.MemoryCacheImageOutputStream;
+
+import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
+import com.sun.media.imageio.plugins.tiff.TIFFField;
+import com.sun.media.imageio.plugins.tiff.TIFFTag;
 
 /**
  * Compressor for encoding compression type 7, TTN2/Adobe JPEG-in-TIFF.

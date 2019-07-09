@@ -43,15 +43,14 @@
  *  */
 package jj2000.j2k.image.forwcomptransf;
 
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
-import java.util.*;
+import java.util.StringTokenizer;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.image.CompTransfSpec;
+import jj2000.j2k.wavelet.FilterTypes;
+import jj2000.j2k.wavelet.analysis.AnWTFilter;
+import jj2000.j2k.wavelet.analysis.AnWTFilterSpec;
 /**
  * This class extends CompTransfSpec class in order to hold encoder specific
  * aspects of CompTransfSpec.

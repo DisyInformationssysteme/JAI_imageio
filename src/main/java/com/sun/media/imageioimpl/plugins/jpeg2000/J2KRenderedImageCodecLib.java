@@ -44,10 +44,6 @@
  */
 package com.sun.media.imageioimpl.plugins.jpeg2000;
 
-import javax.imageio.IIOException;
-import javax.imageio.ImageReadParam;
-import javax.imageio.stream.ImageInputStream;
-
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Transparency;
@@ -57,33 +53,29 @@ import java.awt.color.ICC_Profile;
 import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentColorModel;
-import java.awt.image.ComponentSampleModel;
 import java.awt.image.DataBuffer;
-import java.awt.image.DirectColorModel;
 import java.awt.image.IndexColorModel;
 import java.awt.image.MultiPixelPackedSampleModel;
 import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.SinglePixelPackedSampleModel;
 import java.awt.image.Raster;
-import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-
 import java.io.IOException;
-
 import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
 
+import javax.imageio.IIOException;
+import javax.imageio.ImageReadParam;
+import javax.imageio.stream.ImageInputStream;
+
+import com.sun.media.imageio.plugins.jpeg2000.J2KImageReadParam;
+import com.sun.media.imageioimpl.common.ImageUtil;
+import com.sun.media.imageioimpl.common.SimpleRenderedImage;
+import com.sun.medialib.codec.jiio.mediaLibImage;
 import com.sun.medialib.codec.jp2k.CompParams;
 import com.sun.medialib.codec.jp2k.Constants;
 import com.sun.medialib.codec.jp2k.Decoder;
 import com.sun.medialib.codec.jp2k.Size;
-import com.sun.medialib.codec.jiio.mediaLibImage;
-
-import com.sun.media.imageio.plugins.jpeg2000.J2KImageReadParam;
-import com.sun.media.imageioimpl.common.SimpleRenderedImage;
-import com.sun.media.imageioimpl.common.ImageUtil;
 
 // XXX Overall documentation
 

@@ -44,13 +44,14 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
-import com.sun.media.imageio.plugins.tiff.TIFFCompressor;
-import com.sun.media.imageio.plugins.tiff.TIFFField;
-import com.sun.media.imageio.plugins.tiff.TIFFTag;
 import java.io.IOException;
+
 import javax.imageio.IIOException;
 import javax.imageio.metadata.IIOMetadata;
+
+import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
+import com.sun.media.imageio.plugins.tiff.TIFFField;
+import com.sun.media.imageio.plugins.tiff.TIFFTag;
 
 /**
  *

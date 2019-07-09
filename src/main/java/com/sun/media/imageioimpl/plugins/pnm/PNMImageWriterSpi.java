@@ -45,16 +45,14 @@
 package com.sun.media.imageioimpl.plugins.pnm;
 
 import java.awt.image.DataBuffer;
-
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.spi.ServiceRegistry;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.IIOException;
 import java.util.Locale;
 
-import com.sun.media.imageio.plugins.pnm.PNMImageWriteParam;
+import javax.imageio.IIOException;
+import javax.imageio.ImageTypeSpecifier;
+import javax.imageio.ImageWriter;
+import javax.imageio.spi.ImageWriterSpi;
+import javax.imageio.spi.ServiceRegistry;
+
 import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class PNMImageWriterSpi extends ImageWriterSpi {

@@ -46,10 +46,12 @@ package com.sun.media.imageioimpl.plugins.tiff;
 
 import java.io.IOException;
 import java.util.Locale;
+
 import javax.imageio.ImageReader;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.spi.ServiceRegistry;
 import javax.imageio.stream.ImageInputStream;
+
 import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class TIFFImageReaderSpi extends ImageReaderSpi {

@@ -49,31 +49,22 @@ import java.awt.color.ColorSpace;
 import java.awt.color.ICC_ColorSpace;
 import java.awt.color.ICC_Profile;
 import java.awt.image.BufferedImage;
-import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
-import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.PixelInterleavedSampleModel;
-import java.awt.image.SampleModel;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+
 import javax.imageio.IIOException;
-import javax.imageio.IIOImage;
-import javax.imageio.ImageReader;
-import javax.imageio.ImageReadParam;
-import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageReaderSpi;
 import javax.imageio.stream.ImageInputStream;
+
 import com.sun.media.imageioimpl.common.InvertedCMYKColorSpace;
 import com.sun.media.imageioimpl.plugins.clib.CLibImageReader;
 import com.sun.media.imageioimpl.plugins.clib.InputStreamAdapter;
-import com.sun.medialib.codec.jpeg.Decoder;
 import com.sun.medialib.codec.jiio.mediaLibImage;
+import com.sun.medialib.codec.jpeg.Decoder;
 
 final class CLibJPEGImageReader extends CLibImageReader {
     private static final boolean DEBUG = false; // XXX false for release

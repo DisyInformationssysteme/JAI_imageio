@@ -44,17 +44,16 @@
  *  */
 package jj2000.j2k.entropy.encoder;
 
-import jj2000.j2k.codestream.writer.*;
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.entropy.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
-import java.io.*;
+import java.io.IOException;
+import java.io.StreamTokenizer;
+import java.io.StringReader;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.codestream.ProgressionType;
+import jj2000.j2k.codestream.writer.CodestreamWriter;
+import jj2000.j2k.codestream.writer.HeaderEncoder;
+import jj2000.j2k.image.ImgDataAdapter;
 /**
  * This is the abstract class from which post-compression rate allocators
  * which generate layers should inherit. The source of data is a

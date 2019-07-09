@@ -43,13 +43,17 @@
  * */
 package jj2000.j2k.image.forwcomptransf;
 
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.ModuleSpec;
+import jj2000.j2k.image.BlkImgDataSrc;
+import jj2000.j2k.image.CompTransfSpec;
+import jj2000.j2k.image.DataBlk;
+import jj2000.j2k.image.DataBlkFloat;
+import jj2000.j2k.image.DataBlkInt;
+import jj2000.j2k.image.ImgDataAdapter;
+import jj2000.j2k.util.MathUtil;
+import jj2000.j2k.wavelet.analysis.AnWTFilterSpec;
 /**
  * This class apply component transformations to the tiles depending
  * on user specifications. These transformations can be used to

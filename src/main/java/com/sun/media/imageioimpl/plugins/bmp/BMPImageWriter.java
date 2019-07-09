@@ -44,8 +44,9 @@
  */
 package com.sun.media.imageioimpl.plugins.bmp;
 
-import java.awt.Point;
 import java.awt.Rectangle;
+import java.awt.image.BandedSampleModel;
+import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentSampleModel;
 import java.awt.image.DataBuffer;
@@ -56,36 +57,27 @@ import java.awt.image.DataBufferUShort;
 import java.awt.image.DirectColorModel;
 import java.awt.image.IndexColorModel;
 import java.awt.image.MultiPixelPackedSampleModel;
-import java.awt.image.BandedSampleModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.SinglePixelPackedSampleModel;
-import java.awt.image.WritableRaster;
-import java.awt.image.BufferedImage;
-
-import java.io.IOException;
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.nio.ByteOrder;
 import java.util.Iterator;
 
-import javax.imageio.IIOImage;
 import javax.imageio.IIOException;
+import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
-import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
-import javax.imageio.metadata.IIOInvalidTreeException;
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.stream.ImageOutputStream;
 import javax.imageio.event.IIOWriteProgressListener;
 import javax.imageio.event.IIOWriteWarningListener;
-
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import javax.imageio.metadata.IIOInvalidTreeException;
+import javax.imageio.metadata.IIOMetadata;
+import javax.imageio.spi.ImageWriterSpi;
+import javax.imageio.stream.ImageOutputStream;
 
 import com.sun.media.imageio.plugins.bmp.BMPImageWriteParam;
 import com.sun.media.imageioimpl.common.ImageUtil;

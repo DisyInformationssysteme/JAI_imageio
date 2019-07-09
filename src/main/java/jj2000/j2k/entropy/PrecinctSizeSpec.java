@@ -43,14 +43,17 @@
  * */
 package jj2000.j2k.entropy;
 
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
+import java.util.NoSuchElementException;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
-import java.util.*;
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.IntegerSpec;
+import jj2000.j2k.ModuleSpec;
+import jj2000.j2k.codestream.Markers;
+import jj2000.j2k.image.BlkImgDataSrc;
+import jj2000.j2k.util.MathUtil;
 
 /**
  * This class extends ModuleSpec class for precinct partition sizes holding

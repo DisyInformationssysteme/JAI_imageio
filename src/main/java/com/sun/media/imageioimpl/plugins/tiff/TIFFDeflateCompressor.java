@@ -44,11 +44,9 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
-import com.sun.media.imageio.plugins.tiff.TIFFCompressor;
-import java.io.IOException;
-import java.util.zip.Deflater;
 import javax.imageio.ImageWriteParam;
+
+import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 
 /**
  * Compressor for Deflate compression.

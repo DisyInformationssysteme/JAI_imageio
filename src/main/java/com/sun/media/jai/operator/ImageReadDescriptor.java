@@ -45,7 +45,6 @@
 package com.sun.media.jai.operator;
 
 import java.awt.RenderingHints;
-import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ContextualRenderedImageFactory;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
@@ -55,6 +54,7 @@ import java.net.Socket;
 import java.util.Collection;
 import java.util.EventListener;
 import java.util.Locale;
+
 import javax.imageio.ImageReadParam;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.ImageInputStream;
@@ -62,11 +62,12 @@ import javax.media.jai.JAI;
 import javax.media.jai.OperationDescriptorImpl;
 import javax.media.jai.OperationRegistry;
 import javax.media.jai.PropertyGenerator;
-import javax.media.jai.RenderedOp;
 import javax.media.jai.RenderableOp;
+import javax.media.jai.RenderedOp;
 import javax.media.jai.registry.CollectionRegistryMode;
 import javax.media.jai.registry.RenderableRegistryMode;
 import javax.media.jai.registry.RenderedRegistryMode;
+
 import com.sun.media.jai.util.PropertyGeneratorImpl;
 
 /**

@@ -44,7 +44,6 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import java.awt.color.ColorSpace;
 import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
 import com.sun.media.imageio.plugins.tiff.TIFFColorConverter;
 import com.sun.media.imageio.plugins.tiff.TIFFField;

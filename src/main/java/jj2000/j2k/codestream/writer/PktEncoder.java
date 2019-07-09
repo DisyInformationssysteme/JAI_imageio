@@ -45,17 +45,17 @@
 
 package jj2000.j2k.codestream.writer;
 import java.awt.Point;
-
-import jj2000.j2k.wavelet.analysis.*;
-import jj2000.j2k.entropy.encoder.*;
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.wavelet.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
 import java.util.Vector;
+
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.codestream.CBlkCoordInfo;
+import jj2000.j2k.codestream.PrecInfo;
+import jj2000.j2k.entropy.encoder.CBlkRateDistStats;
+import jj2000.j2k.entropy.encoder.CodedCBlkDataSrcEnc;
+import jj2000.j2k.util.ArrayUtil;
+import jj2000.j2k.util.MathUtil;
+import jj2000.j2k.wavelet.analysis.SubbandAn;
 /**
  * This class builds packets and keeps the state information of packet
  * interdependencies. It also supports saving the state and reverting

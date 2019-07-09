@@ -46,6 +46,7 @@
 package com.sun.media.imageioimpl.plugins.gif;
 
 import java.util.Arrays;
+
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.metadata.IIOMetadataFormat;
 import javax.imageio.metadata.IIOMetadataFormatImpl;

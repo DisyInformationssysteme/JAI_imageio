@@ -49,8 +49,8 @@ import java.awt.RenderingHints;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderableImage;
 import java.awt.image.renderable.RenderContext;
+import java.awt.image.renderable.RenderableImage;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.net.Socket;
@@ -62,9 +62,10 @@ import java.util.Iterator;
 import java.util.Locale;
 import java.util.TreeMap;
 import java.util.Vector;
+
 import javax.imageio.ImageIO;
-import javax.imageio.ImageReader;
 import javax.imageio.ImageReadParam;
+import javax.imageio.ImageReader;
 import javax.imageio.event.IIOReadProgressListener;
 import javax.imageio.event.IIOReadUpdateListener;
 import javax.imageio.event.IIOReadWarningListener;
@@ -76,6 +77,7 @@ import javax.media.jai.JAI;
 import javax.media.jai.MultiResolutionRenderableImage;
 import javax.media.jai.PropertySource;
 import javax.media.jai.WritablePropertySource;
+
 import com.sun.media.jai.operator.ImageReadDescriptor;
 
 public final class ImageReadCRIF extends CRIFImpl {

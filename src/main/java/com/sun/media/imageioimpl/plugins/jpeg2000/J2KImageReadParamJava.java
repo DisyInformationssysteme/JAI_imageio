@@ -45,6 +45,7 @@
 package com.sun.media.imageioimpl.plugins.jpeg2000;
 
 import javax.imageio.ImageReadParam;
+
 import com.sun.media.imageio.plugins.jpeg2000.J2KImageReadParam;
 /**
  * A subclass of <code>ImageReadParam</code> for reading images in

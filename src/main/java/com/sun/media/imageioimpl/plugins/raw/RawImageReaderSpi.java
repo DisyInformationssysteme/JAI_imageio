@@ -44,14 +44,13 @@
  */
 package com.sun.media.imageioimpl.plugins.raw;
 
-import java.util.Locale;
-import javax.imageio.spi.ImageReaderSpi;
-import javax.imageio.stream.ImageInputStream;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.spi.ServiceRegistry;
 import java.io.IOException;
-import javax.imageio.ImageReader;
+import java.util.Locale;
+
 import javax.imageio.IIOException;
+import javax.imageio.ImageReader;
+import javax.imageio.spi.ImageReaderSpi;
+import javax.imageio.spi.ServiceRegistry;
 
 import com.sun.media.imageio.stream.RawImageInputStream;
 import com.sun.media.imageioimpl.common.PackageUtil;

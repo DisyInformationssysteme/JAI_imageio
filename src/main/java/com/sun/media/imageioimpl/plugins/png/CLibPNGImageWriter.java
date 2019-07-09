@@ -44,7 +44,6 @@
  */
 package com.sun.media.imageioimpl.plugins.png;
 
-import java.awt.Color;
 import java.awt.color.ColorSpace;
 import java.awt.color.ICC_ColorSpace;
 import java.awt.color.ICC_Profile;
@@ -54,24 +53,23 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.Locale;
+
 import javax.imageio.IIOException;
 import javax.imageio.IIOImage;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageTypeSpecifier;
+import javax.imageio.ImageWriteParam;
 import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.metadata.IIOMetadata;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
 import com.sun.media.imageioimpl.plugins.clib.CLibImageWriter;
 import com.sun.media.imageioimpl.plugins.clib.OutputStreamAdapter;
+import com.sun.medialib.codec.jiio.mediaLibImage;
 import com.sun.medialib.codec.png.Constants;
 import com.sun.medialib.codec.png.Encoder;
-import com.sun.medialib.codec.jiio.mediaLibImage;
 
 final class CLibPNGImageWriter extends CLibImageWriter {
 

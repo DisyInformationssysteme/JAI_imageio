@@ -44,10 +44,10 @@
  */
 package com.sun.media.imageio.plugins.tiff;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Locale;
+
 import javax.imageio.ImageWriteParam;
+
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
 
 /**

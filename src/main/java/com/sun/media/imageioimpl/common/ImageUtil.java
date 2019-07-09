@@ -45,7 +45,6 @@
  */
 package com.sun.media.imageioimpl.common;
 
-import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Transparency;
 import java.awt.color.ColorSpace;
@@ -68,7 +67,6 @@ import java.awt.image.SampleModel;
 import java.awt.image.SinglePixelPackedSampleModel;
 import java.awt.image.WritableRaster;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -77,7 +75,6 @@ import java.util.Locale;
 //import javax.imageio.ImageTypeSpecifier;
 
 import javax.imageio.IIOException;
-import javax.imageio.IIOImage;
 import javax.imageio.ImageReadParam;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.ImageWriter;

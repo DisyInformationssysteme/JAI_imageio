@@ -46,6 +46,7 @@
 package com.sun.media.imageioimpl.plugins.tiff;
 
 import java.io.IOException;
+
 import com.sun.media.imageio.plugins.tiff.TIFFDecompressor;
 
 public class TIFFNullDecompressor extends TIFFDecompressor {

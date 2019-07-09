@@ -45,18 +45,13 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import java.util.Collection;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Locale;
 import java.util.Map;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
-import javax.imageio.ImageTypeSpecifier;
+
 import javax.imageio.metadata.IIOMetadataFormat;
-import com.sun.media.imageio.plugins.tiff.BaselineTIFFTagSet;
-import com.sun.media.imageio.plugins.tiff.TIFFTag;
-import com.sun.media.imageio.plugins.tiff.TIFFTagSet;
 
 public abstract class TIFFMetadataFormat implements IIOMetadataFormat {
 

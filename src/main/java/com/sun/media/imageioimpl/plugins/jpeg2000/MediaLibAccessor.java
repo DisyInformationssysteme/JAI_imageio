@@ -44,9 +44,7 @@
  */
 package com.sun.media.imageioimpl.plugins.jpeg2000;
 import java.awt.Rectangle;
-import java.awt.image.ColorModel;
 import java.awt.image.ComponentSampleModel;
-import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.DataBufferByte;
 import java.awt.image.DataBufferDouble;
@@ -54,24 +52,13 @@ import java.awt.image.DataBufferFloat;
 import java.awt.image.DataBufferInt;
 import java.awt.image.DataBufferShort;
 import java.awt.image.DataBufferUShort;
-import java.awt.image.MultiPixelPackedSampleModel;
 import java.awt.image.Raster;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import java.awt.image.RenderedImage;
-import java.awt.image.renderable.ParameterBlock;
-import java.io.FileNotFoundException;
-import java.io.FilePermission;
-import java.io.InputStream;
-import java.io.IOException;
-import java.lang.NoClassDefFoundError;
-import java.security.AccessControlException;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
 
 import com.sun.media.imageioimpl.common.ImageUtil;
-import com.sun.medialib.codec.jiio.Util;
 import com.sun.medialib.codec.jiio.Constants;
+import com.sun.medialib.codec.jiio.Util;
 import com.sun.medialib.codec.jiio.mediaLibImage;
 
 /**

@@ -44,12 +44,11 @@
  */
 package jj2000.j2k.quantization;
 
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
-import java.util.*;
+import java.util.StringTokenizer;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.ModuleSpec;
 /**
  * This class extends ModuleSpec class in order to hold specifications about
  * number of guard bits in each tile-component.

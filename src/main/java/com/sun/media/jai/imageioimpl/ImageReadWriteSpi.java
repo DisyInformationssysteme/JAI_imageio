@@ -45,15 +45,16 @@
 package com.sun.media.jai.imageioimpl;
 
 import java.awt.image.renderable.ContextualRenderedImageFactory;
-import javax.media.jai.CollectionImageFactory;
+
 import javax.media.jai.OperationDescriptor;
 import javax.media.jai.OperationRegistry;
 import javax.media.jai.OperationRegistrySpi;
-import com.sun.media.jai.operator.ImageReadDescriptor;
-import com.sun.media.jai.operator.ImageWriteDescriptor;
 import javax.media.jai.registry.CollectionRegistryMode;
 import javax.media.jai.registry.RenderableRegistryMode;
 import javax.media.jai.registry.RenderedRegistryMode;
+
+import com.sun.media.jai.operator.ImageReadDescriptor;
+import com.sun.media.jai.operator.ImageWriteDescriptor;
 
 /**
  * {@link OperationRegistrySpi} implementation to register the "ImageRead"

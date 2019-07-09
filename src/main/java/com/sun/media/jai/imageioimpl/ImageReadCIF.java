@@ -53,6 +53,7 @@ import javax.media.jai.CollectionImageFactory;
 import javax.media.jai.CollectionOp;
 import javax.media.jai.JAI;
 import javax.media.jai.PlanarImage;
+
 import com.sun.media.jai.operator.ImageReadDescriptor;
 
 public class ImageReadCIF implements CollectionImageFactory {

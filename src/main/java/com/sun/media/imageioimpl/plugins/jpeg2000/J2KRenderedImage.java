@@ -48,11 +48,13 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
-import java.io.*;
+import java.io.IOException;
+
 import javax.imageio.stream.ImageInputStream;
-import jj2000.j2k.codestream.reader.*;
 
 import com.sun.media.imageioimpl.common.SimpleRenderedImage;
+
+import jj2000.j2k.codestream.reader.HeaderDecoder;
 
 public class J2KRenderedImage extends SimpleRenderedImage {
     private Raster currentTile;

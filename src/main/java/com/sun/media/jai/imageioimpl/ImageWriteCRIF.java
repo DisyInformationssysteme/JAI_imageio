@@ -49,21 +49,22 @@ import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import java.awt.image.renderable.RenderableImage;
 import java.awt.image.renderable.RenderContext;
+import java.awt.image.renderable.RenderableImage;
+import java.awt.image.renderable.RenderedImageFactory;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.io.RandomAccessFile;
 import java.net.Socket;
 import java.util.Arrays;
 import java.util.EventListener;
 import java.util.Iterator;
 import java.util.Locale;
+
 import javax.imageio.IIOImage;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.ImageWriter;
 import javax.imageio.ImageWriteParam;
+import javax.imageio.ImageWriter;
 import javax.imageio.event.IIOWriteProgressListener;
 import javax.imageio.event.IIOWriteWarningListener;
 import javax.imageio.metadata.IIOMetadata;
@@ -72,6 +73,7 @@ import javax.media.jai.CRIFImpl;
 import javax.media.jai.PlanarImage;
 import javax.media.jai.RenderedImageAdapter;
 import javax.media.jai.WritablePropertySource;
+
 import com.sun.media.jai.operator.ImageWriteDescriptor;
 
 public final class ImageWriteCRIF extends CRIFImpl {

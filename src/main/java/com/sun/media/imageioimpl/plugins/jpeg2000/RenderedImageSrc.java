@@ -46,23 +46,20 @@ package com.sun.media.imageioimpl.plugins.jpeg2000;
 
 import java.awt.Point;
 import java.awt.Rectangle;
-import java.awt.RenderingHints;
 import java.awt.image.ColorModel;
-import java.awt.image.ComponentSampleModel;
 import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
-import java.awt.image.RenderedImage;
 import java.awt.image.Raster;
-import java.awt.image.MultiPixelPackedSampleModel;
+import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import java.awt.image.renderable.ParameterBlock;
-
-import jj2000.j2k.image.*;
-import jj2000.j2k.*;
-import java.io.*;
 
 import com.sun.media.imageioimpl.common.ImageUtil;
+
+import jj2000.j2k.JJ2KExceptionHandler;
+import jj2000.j2k.image.BlkImgDataSrc;
+import jj2000.j2k.image.DataBlk;
+import jj2000.j2k.image.DataBlkInt;
+import jj2000.j2k.image.ImgData;
 
 public class RenderedImageSrc implements BlkImgDataSrc {
     /** The width of the image */

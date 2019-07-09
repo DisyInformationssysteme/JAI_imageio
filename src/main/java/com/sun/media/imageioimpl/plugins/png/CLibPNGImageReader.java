@@ -47,18 +47,20 @@ package com.sun.media.imageioimpl.plugins.png;
 import java.awt.color.ColorSpace;
 import java.awt.color.ICC_ColorSpace;
 import java.awt.color.ICC_Profile;
-import java.io.InputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+
 import javax.imageio.IIOException;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageReaderSpi;
+
 import com.sun.media.imageioimpl.plugins.clib.CLibImageReader;
-import com.sun.medialib.codec.png.Decoder;
 import com.sun.medialib.codec.jiio.mediaLibImage;
+import com.sun.medialib.codec.png.Decoder;
 
 final class CLibPNGImageReader extends CLibImageReader {
     private Decoder decoder;

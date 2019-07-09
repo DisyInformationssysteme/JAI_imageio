@@ -46,6 +46,7 @@ package com.sun.media.imageioimpl.plugins.clib;
 
 import java.io.IOException;
 import java.io.OutputStream;
+
 import javax.imageio.stream.ImageOutputStream;
 
 /**

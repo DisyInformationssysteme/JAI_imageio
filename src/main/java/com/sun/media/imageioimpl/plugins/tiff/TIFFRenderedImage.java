@@ -55,8 +55,10 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Vector;
+
 import javax.imageio.ImageReadParam;
 import javax.imageio.ImageTypeSpecifier;
+
 import com.sun.media.imageio.plugins.tiff.TIFFImageReadParam;
 import com.sun.media.imageio.plugins.tiff.TIFFTagSet;
 

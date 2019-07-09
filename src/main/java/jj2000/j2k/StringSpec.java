@@ -43,10 +43,7 @@
  * */
 package jj2000.j2k;
 
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
-import java.util.*;
+import java.util.StringTokenizer;
 
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
 /**

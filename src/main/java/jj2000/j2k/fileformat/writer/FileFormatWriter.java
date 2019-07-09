@@ -44,22 +44,22 @@
 package jj2000.j2k.fileformat.writer;
 
 import java.awt.image.ColorModel;
-import java.awt.image.DataBuffer;
 import java.awt.image.IndexColorModel;
 import java.awt.image.SampleModel;
+import java.io.File;
+import java.io.IOException;
 
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.fileformat.*;
-import jj2000.j2k.io.*;
-
-import java.io.*;
-
-import javax.imageio.stream.ImageOutputStream;
 import javax.imageio.metadata.IIOMetadataNode;
+import javax.imageio.stream.ImageOutputStream;
+
 import org.w3c.dom.NodeList;
+
 import com.sun.media.imageioimpl.plugins.jpeg2000.Box;
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KMetadata;
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KMetadataFormat;
+
+import jj2000.j2k.fileformat.FileFormatBoxes;
+import jj2000.j2k.io.BEBufferedRandomAccessFile;
 
 /**
  * This class writes the file format wrapper that may or may not exist around

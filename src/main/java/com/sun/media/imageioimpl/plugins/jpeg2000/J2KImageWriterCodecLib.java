@@ -48,41 +48,36 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.image.ColorModel;
 import java.awt.image.DataBuffer;
-import java.awt.image.DataBufferByte;
 import java.awt.image.IndexColorModel;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-
 import java.io.IOException;
-
 import java.util.Arrays;
 import java.util.List;
 
 import javax.imageio.IIOImage;
-import javax.imageio.IIOException;
 import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.ImageWriteParam;
 import javax.imageio.ImageWriter;
+import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.metadata.IIOMetadataFormatImpl;
 import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
 
-import com.sun.media.imageio.plugins.jpeg2000.J2KImageWriteParam;
-import com.sun.media.imageioimpl.common.ImageUtil;
-import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
+import com.sun.media.imageio.plugins.jpeg2000.J2KImageWriteParam;
+import com.sun.media.imageioimpl.common.ImageUtil;
+import com.sun.medialib.codec.jiio.mediaLibImage;
 import com.sun.medialib.codec.jp2k.CompParams;
 import com.sun.medialib.codec.jp2k.Constants;
 import com.sun.medialib.codec.jp2k.Encoder;
 import com.sun.medialib.codec.jp2k.Params;
 import com.sun.medialib.codec.jp2k.Size;
-import com.sun.medialib.codec.jiio.*;
 
 public class J2KImageWriterCodecLib extends ImageWriter {
     /** When the writing is aborted, <code>RenderedImageSrc</code> throws a

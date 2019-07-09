@@ -44,15 +44,11 @@
  */
 package com.sun.media.imageio.plugins.tiff;
 
-import java.io.IOException;
-import java.io.Serializable;
 import java.util.StringTokenizer;
-import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageOutputStream;
+
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
-import com.sun.media.imageio.plugins.tiff.TIFFTag;
-import com.sun.media.imageio.plugins.tiff.TIFFTagSet;
+
 import com.sun.media.imageioimpl.plugins.tiff.TIFFFieldNode;
 
 /**

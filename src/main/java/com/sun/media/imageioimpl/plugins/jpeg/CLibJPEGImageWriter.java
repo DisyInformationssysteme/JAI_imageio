@@ -55,20 +55,20 @@ import java.awt.image.WritableRaster;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Locale;
+
 import javax.imageio.IIOException;
 import javax.imageio.IIOImage;
-import javax.imageio.ImageWriter;
 import javax.imageio.ImageWriteParam;
-import javax.imageio.ImageTypeSpecifier;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.spi.ImageWriterSpi;
 import javax.imageio.stream.ImageOutputStream;
+
 import com.sun.media.imageioimpl.common.ImageUtil;
 import com.sun.media.imageioimpl.plugins.clib.CLibImageWriter;
 import com.sun.media.imageioimpl.plugins.clib.OutputStreamAdapter;
-import com.sun.medialib.codec.jpeg.Encoder;
 import com.sun.medialib.codec.jiio.Constants;
 import com.sun.medialib.codec.jiio.mediaLibImage;
+import com.sun.medialib.codec.jpeg.Encoder;
 
 final class CLibJPEGImageWriter extends CLibImageWriter {
     private Encoder encoder;

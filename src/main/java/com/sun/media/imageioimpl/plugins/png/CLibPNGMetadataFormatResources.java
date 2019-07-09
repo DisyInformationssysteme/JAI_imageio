@@ -46,8 +46,6 @@
 package com.sun.media.imageioimpl.plugins.png;
 
 import java.util.ListResourceBundle;
-import javax.imageio.metadata.IIOMetadataFormat;
-import javax.imageio.metadata.IIOMetadataFormatImpl;
 
 public class CLibPNGMetadataFormatResources extends ListResourceBundle {
 

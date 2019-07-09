@@ -47,6 +47,7 @@ package com.sun.media.jai.operator;
 
 import java.util.Collection;
 import java.util.Iterator;
+
 import javax.media.jai.PropertySource;
 
 final class PrintProps {

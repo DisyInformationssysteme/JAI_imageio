@@ -46,15 +46,21 @@
 package jj2000.j2k.wavelet.analysis;
 import java.awt.Point;
 
-import jj2000.j2k.codestream.*;
-import jj2000.j2k.entropy.*;
-import jj2000.j2k.wavelet.*;
-//import jj2000.j2k.encoder.*;
-import jj2000.j2k.image.*;
-import jj2000.j2k.util.*;
-import jj2000.j2k.*;
-
 import com.sun.media.imageioimpl.plugins.jpeg2000.J2KImageWriteParamJava;
+
+import jj2000.j2k.IntegerSpec;
+import jj2000.j2k.ModuleSpec;
+import jj2000.j2k.codestream.Markers;
+import jj2000.j2k.entropy.CBlkSizeSpec;
+import jj2000.j2k.entropy.PrecinctSizeSpec;
+//import jj2000.j2k.encoder.*;
+import jj2000.j2k.image.BlkImgDataSrc;
+import jj2000.j2k.image.DataBlk;
+import jj2000.j2k.image.DataBlkFloat;
+import jj2000.j2k.image.DataBlkInt;
+import jj2000.j2k.util.MathUtil;
+import jj2000.j2k.wavelet.Subband;
+import jj2000.j2k.wavelet.WaveletTransform;
 /**
  * This class implements the ForwardWT with the full-page approach to be used
  * either with integer or floating-point filters

@@ -45,8 +45,10 @@
 package com.sun.media.imageioimpl.plugins.jpeg2000;
 
 import java.awt.image.ColorModel;
+
 import javax.imageio.metadata.IIOInvalidTreeException;
 import javax.imageio.metadata.IIOMetadataNode;
+
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 

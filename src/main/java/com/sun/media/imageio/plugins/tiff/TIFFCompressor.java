@@ -45,9 +45,11 @@
 package com.sun.media.imageio.plugins.tiff;
 
 import java.io.IOException;
+
 import javax.imageio.ImageWriter;
 import javax.imageio.metadata.IIOMetadata;
 import javax.imageio.stream.ImageOutputStream;
+
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageWriter;
 
 /**

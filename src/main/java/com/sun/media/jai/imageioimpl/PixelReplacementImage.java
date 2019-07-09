@@ -52,18 +52,17 @@ import java.awt.image.RenderedImage;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
-import java.io.OutputStream;
 import java.util.Map;
 import java.util.Vector;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.OpImage;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.PropertyChangeEventJAI;
-import javax.media.jai.RenderingChangeEvent;
-import javax.imageio.ImageWriter;
+
 import javax.imageio.ImageWriteParam;
+import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageOutputStream;
+import javax.media.jai.ImageLayout;
+import javax.media.jai.PlanarImage;
+import javax.media.jai.PropertyChangeEventJAI;
+import javax.media.jai.RenderedOp;
+import javax.media.jai.RenderingChangeEvent;
 
 /**
  * Implementation of <code>PlanarImage</code> for the "ImageWrite" operation

@@ -46,21 +46,15 @@ package com.sun.media.imageioimpl.plugins.jpeg2000;
 
 import java.awt.image.DataBuffer;
 import java.awt.image.SampleModel;
-
-import javax.imageio.spi.ImageWriterSpi;
-import javax.imageio.spi.ServiceRegistry;
-import javax.imageio.spi.IIORegistry;
-import javax.imageio.ImageWriter;
-import javax.imageio.ImageTypeSpecifier;
-import javax.imageio.IIOException;
-
-import java.awt.image.ColorModel;
-import java.awt.image.IndexColorModel;
 import java.util.Locale;
 
-import com.sun.media.imageioimpl.common.PackageUtil;
+import javax.imageio.IIOException;
+import javax.imageio.ImageTypeSpecifier;
+import javax.imageio.ImageWriter;
+import javax.imageio.spi.ImageWriterSpi;
+import javax.imageio.spi.ServiceRegistry;
 
-import com.sun.medialib.codec.jiio.Util;
+import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class J2KImageWriterSpi extends ImageWriterSpi {
     private static String [] readerSpiNames =

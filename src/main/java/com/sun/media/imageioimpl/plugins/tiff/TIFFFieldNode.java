@@ -44,21 +44,17 @@
  */
 package com.sun.media.imageioimpl.plugins.tiff;
 
-import java.io.IOException;
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.List;
-import javax.imageio.metadata.IIOMetadata;
+
 import javax.imageio.metadata.IIOMetadataNode;
-import javax.imageio.stream.ImageOutputStream;
+
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+
 import com.sun.media.imageio.plugins.tiff.TIFFDirectory;
 import com.sun.media.imageio.plugins.tiff.TIFFField;
 import com.sun.media.imageio.plugins.tiff.TIFFTag;
 import com.sun.media.imageio.plugins.tiff.TIFFTagSet;
-import com.sun.media.imageioimpl.plugins.tiff.TIFFIFD;
-import com.sun.media.imageioimpl.plugins.tiff.TIFFImageMetadata;
 
 /**
  * The <code>Node</code> representation of a <code>TIFFField</code>
